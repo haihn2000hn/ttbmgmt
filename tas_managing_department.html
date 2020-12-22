@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="layout3.css" type="text/css">
+</head>
+<body>
+    <div class ="header">
+        <div class ="wc">
+            Welcome:
+        </div>
+        <div class ="name">
+            Mr/Mrs/Miss: Nguyen Nghieng Nghieng Nghieng Nghieng
+        </div>    
+    </div>
+    <button class="button link-button width-bt" onclick="myFunction()">Add Timetable</button>
+    <button class="button link-button width-bt bt2" onclick="myFunction2()">Change or Delete</button>
+    <div id="myDIV" class="dp">
+        <form action="/action_page.php">
+            <label class= "ttname">Timetable name:</label>
+            <input class= "ttname2 " placeholder="Timetable name..">
+        </form>
+        <table>
+            <tr>
+                <th class="lp">Time</th>
+                <th class="day">Monday</th>
+                <th class="day">Tuesday</th>
+                <th class="day">Wednesday</th>
+                <th class="day">Thursday</th>
+                <th class="day">Friday</th>
+            </tr>
+            <tr>
+                <td>7:00 - 7:50</td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+            </tr>
+            <tr>
+                <td>8:00 - 8:50</td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+            </tr>
+            <tr>
+                <td>9:00 - 9:50</td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+            </tr>
+            <tr>
+                <td>10:00 - 10:50</td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+            </tr>
+            <tr>
+                <td>11:00 - 11:50</td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+            </tr>
+            <tr>
+                <td>13:00 - 13:50</td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+            </tr>
+            <tr>
+                <td>14:00 - 14:50</td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+            </tr>
+            <tr>
+                <td>15:00 - 15:50</td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+            </tr>
+            <tr>
+                <td>16:00 - 16:50</td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+            </tr>
+            <tr>
+                <td>17:00 - 17:50</td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+                <td><input class="input-td"></br></td>
+            </tr>
+        </table>
+        <div class="mg">
+            <div class="login_link">
+                <a href="login.html" class="linkli">Add</a>
+            </div> 
+            <button class="button link-button inline">Cancel</button>
+        </div>
+    </div>    
+    <div id="myDIV2" class="dp">
+        <form action="/action_page.php">
+            <label class= "ttname">Timetable name:</label>
+            <input class= "ttname2" placeholder="Timetable name..">
+        </form>
+        <div class="login_link">
+            <a href="login.html" class="linkli">Change</a>
+        </div>   
+        <div class="login_link">
+            <a href="login.html" class="linkli">Delete</a>
+        </div>  
+    </div>    
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        var y = document.getElementById("myDIV2");
+        if (x.style.display === "none" && y.style.display === "none") {
+            x.style.display = "block";
+        } else if (x.style.display === "none" && y.style.display === "block") {
+            x.style.display = "block";
+            y.style.display = "none";
+        } else if (x.style.display === "block" && y.style.display === "none") {
+  	        x.style.display = "none";
+        } else {
+            x.style.display = "none";
+            y.style.display = "none";
+        }
+    }
+
+    function myFunction2() {
+        var x = document.getElementById("myDIV");
+        var y = document.getElementById("myDIV2");
+        if (x.style.display === "none" && y.style.display === "none") {
+            y.style.display = "block";
+        } else if (x.style.display === "none" && y.style.display === "block") {
+            y.style.display = "none";
+        } else if (x.style.display === "block" && y.style.display === "none") {
+            x.style.display = "none";
+            y.style.display = "block";
+        } else {
+            x.style.display = "none";
+            y.style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>
